@@ -14,6 +14,8 @@ public class Hello2 extends HttpServlet {
 	public void doGet (
 		HttpServletRequest request, HttpServletResponse response
 	) throws ServletException, IOException {
+		// setContentTypeメソッドでMIMEタイプと文字コードを指定
+		// MIMEタイプの一覧はテキストのP56を参照
 		response.setContentType("text/plain; charset=UTF-8");
 		PrintWriter out=response.getWriter();
 		out.println("Hello!");
