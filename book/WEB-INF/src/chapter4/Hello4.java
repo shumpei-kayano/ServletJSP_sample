@@ -1,5 +1,6 @@
 package chapter4;
 
+// toolパッケージのPageクラスをimport
 import tool.Page;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -17,7 +18,7 @@ public class Hello4 extends HttpServlet {
 	) throws ServletException, IOException {
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out=response.getWriter();
-
+		// ヘッダー部分を出力
 		Page.header(out);
 
 		out.println("<p>Hello!</p>");

@@ -3,7 +3,9 @@ package tool;
 import java.io.PrintWriter;
 
 public class Page {
-
+	// ヘッダ部分を出力するメソッド
+	// staticをつけるとクラスメソッドになる。
+	// インスタンス化せず、Page.header()という形で呼び出せる
 	public static void header(PrintWriter out) {
 		out.println("<!DOCTYPE html>");
 		out.println("<html>");
