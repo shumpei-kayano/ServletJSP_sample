@@ -2,6 +2,7 @@
 <!DOCTYPE configuration>
 <!-- 上記はEclipseの警告を消すための記述です。 -->
 
+<!-- このcontent.xmlをMETA-INFフォルダに入れる -->
 <Context reloadable="true">
 	<Resource
 		name="jdbc/book"
